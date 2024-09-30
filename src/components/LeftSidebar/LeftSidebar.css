@@ -1,0 +1,45 @@
+.leftsidebar {
+    background-color: #3174df;
+    padding: 20px;
+    height: 100%;
+    width: 250px; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    overflow-y: auto; 
+    color: #fff;
+    z-index: 20;
+    border-radius: 10px;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+    
+}
+
+a:visited {
+    color: inherit; 
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0; 
+}
+
+button{
+    border-radius: 5px;
+    border: none;   
+    background-color: #1E2A5E;
+    font-size: 16px;
+    padding: 10px 20px;
+    color: white;
+}
+button:hover{
+    background-color: #131b3a
+}
+
+button:active {
+    animation: clickAnimation 0.2s ease;
+}

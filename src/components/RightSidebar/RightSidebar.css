@@ -1,0 +1,13 @@
+.rightsidebar {
+    background-color: #3174df;
+    padding: 20px;
+    height: 100%;
+    width: 250px; 
+    position: fixed; 
+    top: 0; 
+    right: 0; 
+    overflow-y: auto; 
+    color: white;
+    z-index: 20;
+    border-radius: 10px;
+}

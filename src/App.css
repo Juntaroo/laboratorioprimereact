@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+@import '~primeicons/primeicons.css';
+@import '~primereact/resources/themes/saga-blue/theme.css'; /* Cambia el tema según prefieras */
+@import '~primereact/resources/primereact.min.css';
+
+*{
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr 3fr 1fr;
+  display: flex; 
+  flex-direction: column; 
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.content{
+  overflow: hidden;
+  min-width: 200px;
+  padding-top: 20px; 
+  margin-left: 250px;
+  margin-right: 250px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center; 
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 768px) {
+  .leftsidebar,
+  .rightsidebar {
+    display: none; 
   }
-  to {
-    transform: rotate(360deg);
+
+  .content {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
